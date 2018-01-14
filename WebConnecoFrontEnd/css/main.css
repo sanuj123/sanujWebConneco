@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100italic,100,300italic,400italic,700,700italic,900,900italic);
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+body h4{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.navbar{
+    background-color: #1686d9;
+    padding: 0.6%;
+}
+#myNavbar>ul>li>a{
+    font-family: 'Lato',sans-serif ;
+    color: white;
+}
+#myNavbar ul li a:hover{
+    background-color: #00438b;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+}
+#myNavbar ul li a:visited{
+    background-color: #00438b;
+    cursor: pointer;
+    color: rgba(255,255,255,1);
+}
+#myNavbar ul li a:focus{
+    background-color: #00438b;
+    color: rgba(255,255,255,1);
+}
+.scrollable-menu {
+    height:215px;
+    max-height:800px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.selectize-control > .selectize-dropdown {
+    top: 36px;
+}
+.highlited{
+    background-color: yellow;
+}
+.ui-select-highlight {
+    font-weight: bold;
+    background-color:yellow;
+}
