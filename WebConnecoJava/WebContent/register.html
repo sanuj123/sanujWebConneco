@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+    body{
+      background-color:#eee;    
+    }
+    .box{
+        float: none;
+        margin: auto;
+    }
+    .thumbnail{
+        padding:20px;
+        box-shadow:2px 2px 10px 2px #ccc;
+        border:none;
+    }
+    input{
+        margin-bottom:20px;
+    }
+    .sign_up{
+        padding:8px 12px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        background-color: transparent;
+    }
+    input[type=checkbox]{
+        margin:0px;
+        
+    }
+    label,.thumbnail a{
+        font-weight: 500;
+        font-size: 12px;
+    }
+    h5{
+        font-weight: bold;
+        margin:20px 0px;
+    }
+    h2{
+        margin-bottom:30px;
+    }
+    footer ul{
+        margin:0px;
+        padding:15px 0px;
+        list-style-type:circle;
+    }
+    footer ul>li{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    footer ul>li>a:hover{
+        text-decoration:none;
+    }
+</style>
+</head>
+<body>
+   <div class="container">
+   <div id="main_box">
+    <h2 class="text-center">Web Conneco</h2>
+    <div class="box col-xs-10 col-sm-4">
+    <div class="thumbnail text-center">
+        <h5>Register</h5>
+        <form action="register" method="post">
+    User Name: <br>
+    <input type="text" name="username"/> <br>
+    Email: <br>
+    <input type="text" name="email"/> <br>
+    Password: <br>
+    <input type="text" name="password"/> <br>
+    Profile Picture: <br>
+    <input type="file" name="photo" size="50"/><br>
+    
+    <button type="submit" value="send" class="btn btn-info">Register</button>
+    </form>
+    </div>
+    
+    </div>
+   </div>
+  
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>        
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script>
+$(document).ready(function(){
+    $(".container").css("height",$(window).height()+"px");
+    $("#main_box").css("margin",parseInt(($(".container").height()-$("#main_box").height()-50)/2)+"px 0px");
+});
+    function saveEmail(){
+        localStorage.setItem('email',$("input[name=email]").val());
+        
+        return false;
+    }
+</script>   
+</body>
+</html>
